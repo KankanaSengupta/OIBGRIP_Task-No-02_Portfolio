@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+:root{
+    --red:rgb(149, 255, 0);
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 3px; padding:0;
+    box-sizing: border-box;
+    text-decoration: rgb(130, 130, 191);
+    outline: none; border: none ;
+    text-transform: capitalize;
+    transform: all .2s linear;
+}
+
+*::selection{
+    background: var(--red);
+    color: #333;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 2rem;
+} 
+
+html::-webkit-scrollbar-track{
+    background: #110101;
+} 
+
+html::-webkit-scrollbar-thumb{
+    background: #c3ff00;
+    border-radius: 18px;
+}
+
+body{
+    background: #110101;
+    overflow-x: hidden;
+    padding-left: 40rem;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+
+}
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 0.2rem solid #fff4 ;
+    color: #dca8dd;
+}
+.heading span{
+    color: #95f213;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 40rem;
+    background: #223151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 0.8rem  solid rgb(209, 250, 44);
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color: rgb(218, 225, 83);
+}
+
+header .user .post{
+    font-size: 2.6rem;
+    color: rgb(35, 239, 239);
+}
+header .user .post:hover{
+    color: #6e26c2;
+}
+
+header .navbar {
+    width: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 2rem 3rem;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #26b39b;
+    color: #fcffe1;
+    font-size: 2.4rem;
+    border-radius: 5rem;
+}
+header .navbar ul li a:hover{
+    background: #ff5900;
+}
+#manu{
+    position: fixed;
+    top: 2rem; right: 2rem;
+    background: #f4e925;
+    color: #280808;
+    cursor: pointer;
+    font-size: 6rem ;
+    padding: 0.3rem 3rem;
+    z-index: 1000;
+    border-radius: 15px;
+    display: none;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color: #32584e;
+}
+.home h1{
+    font-size: 4rem;
+    color: #dca8dd;
+}
+.home h1 samp{
+    color: #95f213;
+}
+.home .enlrge{
+    font-size: 40px;
+    animation: enlarge 1s ease-in-out infinite alternate;
+}
+
+@keyframes enlrge {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+}
+ 
+.home p{
+    font-size: 1rem;
+    color: #46d3ac;
+    margin: 2px;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+
+}
+.about .row .info{
+    flex: 1 1 43rem;
+    padding: 2rem 1rem;
+    padding-left: 5rem;
+}
+.about .row .info h3{
+    font-size: 2rem;
+    color: #95f213;
+    padding: 1rem 0;
+    font-weight: normal;   
+}
+.about .row .info h3 span{
+    color: #dca8dd;  
+}
+
+.about .row .counter{
+    flex: 1 1 43rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+.about .row .counter .box{
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+      
+}
+.about .row .counter .box:hover{
+    background: #46d3ac;     
+}
+
+.about .row .counter .box span{
+    font-size:4rem;
+    color:#c3ff00;
+}
+
+.about .row .counter .box h3{
+    font-size:1.2rem;
+    color: #fcffe1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about .row .counter .box h3:hover{
+    color: #333;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 4rem;
+    top: 40rem;
+}
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    background: #46d3ac;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 9px;
+    padding-left: 3rem;    
+}
+.education .box-container .box{
+    width: 30rem;
+    margin: 5rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+.education .box-container .box span{
+    font-size: 2.4rem;
+    color: #f9faf6;
+
+    font-family: 'Gill Sans';    
+}
+.education .box-container .box hbp{
+    font-size: 1.5rem;
+    color: #c3ff00;
+    /*font-family: sans-serif;*/    
+}
+.education .box-container .box h3{
+    padding-top: 1.3rem;
+    font-size: 1.5rem;
+    color: #e2ebc5;   
+}
+.education .box-container .box p{
+    font-size: 1rem;
+    color: #59b4a3; 
+    font-style: initial;
+    padding-top: 0.6rem; 
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .conten{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    padding-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.5rem;
+}
+.contact .row form .message{
+    height: 15rem;
+    resize: none; 
+}
+
+.contact .row .content .title{
+    text-transform: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: bottom 2rem;
+}
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+   
+}
+.contact .row .content .info h3 i{
+    color: #95f213;
+}
+
+
+
+/*responcivness */
+@media ( max-width: 1400px){
+    html{
+        font-size: 55%;  
+    }
+    .home{
+        padding: 1rem 4rem;
+    }
+}
+@media ( max-width: 900px){
+    header{
+        left: -120%;
+    }
+    #manu{
+        display: block;
+    }
+    header.toggle{
+        left:0%;
+    }
+    body{
+        padding:0;
+    }
+}
+@media ( max-width: 500px){
+    header{
+        width: 100vw;
+    }
+    .about .row .counter .box{
+        width: 100%;
+                  
+    }
+}
